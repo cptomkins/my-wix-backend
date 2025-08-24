@@ -8,9 +8,10 @@ app = FastAPI()
 # Allow your Wix domain (replace with your real domain before deploying)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://yourdomain.com", "https://www.yourdomain.com"],
-    allow_credentials=True,
-    allow_methods=["POST", "OPTIONS"],
+    allow_origins=[
+        "https://harborautomation.com",
+    ],
+    allow_methods=["GET","POST","OPTIONS"],
     allow_headers=["*"],
 )
 
